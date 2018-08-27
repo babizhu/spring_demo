@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
 
+@SuppressWarnings("unused")
 @SpringBootApplication
 @RestController
 @ServletComponentScan("com.bbz.spring.demo")
@@ -64,7 +64,7 @@ public class DemoApplication implements ServletContextInitializer {
     }
 
     @Override
-    public void onStartup(ServletContext servletContext) throws ServletException {
+    public void onStartup(ServletContext servletContext) {
 
 //        servletContext.
     }

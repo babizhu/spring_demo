@@ -26,6 +26,7 @@ public interface StudentMapper {
     Student findByName(@Param("name") String name);
 
 
+    @SuppressWarnings("DefaultAnnotationParam")
     @Insert({"INSERT INTO student(name, age) VALUES(#{name}, #{age})"})
     @Options(useGeneratedKeys = true, keyProperty = "id")
     int insert(Student student);

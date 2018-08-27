@@ -1,4 +1,4 @@
-package com.bbz.spring.demo.web.config;
+package com.bbz.spring.demo.config;
 
 import com.bbz.spring.demo.web.filters.LogCostFilter;
 import com.bbz.spring.demo.web.filters.LogCostFilter2;

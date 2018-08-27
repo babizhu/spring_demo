@@ -17,6 +17,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.function.Function;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -112,5 +113,12 @@ public class DemoApplicationTest {
 
         int totalAge = studentMapper.getTotalAge();
         System.out.println(totalAge);
+    }
+
+    @Test
+    public void FunctionTest(){
+        Function<Integer, String> function = integer -> integer+"";
+        String apply = function.apply(10);
+        System.out.println(apply);
     }
 }
